@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import logo from "../../images/logo.png"
+import ButtonType2 from '../button/ButtonType2';
 const Header = () => {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,8 +36,7 @@ const Header = () => {
           </div>
           <div className="lg:flex lg:items-center lg:gap-4 ">          
                   <span className="text-md text-white  cursor-pointer"><h1>Sign in</h1></span>  
-                  <span className="text-md text-slate-50 border-[3px] border-emerald-600 py-2 px-8 rounded-3xl
-                    cursor-pointer"><h1>Sign Up</h1></span>  
+                    <span><ButtonType2>Sign up</ButtonType2></span>
           </div>
         </div>
       </nav>
