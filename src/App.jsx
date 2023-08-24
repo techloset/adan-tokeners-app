@@ -3,17 +3,19 @@ import logo from "../src/images/bg.png"
 import Dashboard from "../src/images/dashboard.png"
 import Button from './components/button/Button';
 import Card from './components/card/Card';
-import styleimg from "../src/images/style.png"
+import styleimg from "../src/images/style1.svg"
 import InstructionCard from './components/card/InstructionCard';
 import phoneimg from '../src/images/iphone.png'
 import Aboutus from './components/aboutus/Aboutus';
 import PresaleCards from './components/card/PresaleCards';
+import BuyCard from './components/card/BuyCard';
+import foortergarient from '../src/images/garient/footergarient.svg'
+import Footer from './components/footer/Footer';
 function App() {
 
   return (
-    <div className='bg-slate-950 text-white min-h-screen'>
+    <div className='bg-slate-950 text-white min-h-screen '>
       <Header />
-
       <div className="bg-cover h-screen" style={{ backgroundImage: `url(${logo})` }}>
 
         <div className='grid lg:grid-cols-2 grid-cols-1 '>
@@ -34,10 +36,10 @@ function App() {
         <Card />
 
         <div className="pt-12 bg-cover bg-center flex flex-col lg:flex-row items-center justify-center mt-3 w-[100%] h-auto">
-          <div className="lg:w-1/2 ">
-            <img src={styleimg} alt='ImageStyle' className="w-[100%] h-auto lg:h-[80vh]  xl:h-[80vh]  " />
+          <div className="lg:w-1/2  ">
+            <img src={styleimg} alt='ImageStyle' className="w-[100%] h-auto lg:h-[80vh]  xl:h-[80vh]  rounded-tl-[50%] lg:rounded-tr-[50%] lg:rounded-tl-[0%]" />
           </div>
-          <div className="lg:w-1/2 bg-white h-auto lg:h-[80vh]  xl:h-[80vh]  rounded-tl-[18rem] flex flex-col justify-center items-center text-center p-6 overflow-hidden">
+          <div className="lg:w-1/2 bg-white h-auto lg:h-[80vh]  xl:h-[80vh]  lg:rounded-tl-[50%] rounded-tr-[50%] lg:rounded-tr-[0%] flex flex-col justify-center items-center text-center p-6 overflow-hidden">
             <p className='text-5xl text-slate-900 font-semibold mt-24'>What makes us different?</p>
             <p className='text-md font-bold text-zinc-400 mt-3'>We would only launch tokens with the express permission of the creators.</p>
             <p className='text-zinc-500 mt-5 text-md'>There are several thousand celebrities and creators on Twitter, TikTok, Instagram, and YouTube
@@ -64,17 +66,18 @@ function App() {
             />
           </div>
 
-
-
-
         </div>
-        <PresaleCards/>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        <PresaleCards />
+
+        <div className="bg-cover h-screen relative" style={{ backgroundImage: `url(${foortergarient})` }}>
+          <BuyCard />
+          <Footer />
+        </div>
+
       </div>
+
+
+
     </div>
   );
 }

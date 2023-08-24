@@ -68,8 +68,7 @@ const InstructionCard = () => {
                     <div className="space-y-2 mt-12">
                         {card.milestones.map((milestone, index) => (
                             <div key={index} className="flex">
-                                <p className={`${card.textColor}
-                                 font-bold mr-3`}>0{index + 1}</p>
+                                <p className={`${card.textColor} font-bold mr-3`}>0{index + 1}</p>
                                 <p className="text-md text-slate-300 font-light">{milestone}</p>
                             </div>
                         ))}
