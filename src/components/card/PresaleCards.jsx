@@ -2,8 +2,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import desktopbg from '../../images/PresaleCards/desktopbg.svg';
-import mobilebg from '../../images/PresaleCards/mobilebg.svg'
+import desktopbg from '../../images/style/desktopbg.svg';
+import mobilebg from '../../images/style/mobilebg.svg'
 
 
 const cardData = [

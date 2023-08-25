@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import logo1 from '../../images/logo1.png'
+import logo from '../../images/logo/logo.svg'
 import ButtonType2 from '../button/ButtonType2';
 
 const Aboutus = () => {
@@ -12,10 +12,10 @@ const Aboutus = () => {
 
     return (
         <div className='mt-5'>
-            <div className='lg:flex' >
-              <img src={logo1} alt="logo" />
-              <p className='text-3xl font-semibold text-white '>Tokner is coming</p>
-            </div>
+             <div className='lg:flex ' >
+          <img src={logo} alt="logo" />
+          <p className='text-3xl font-semibold text-white '>Tokner is coming</p>
+        </div>
             <div className='mt-6 space-y-4 text-slate-300'>
               <p className='font-semibold'>
                 Cryptocurrency adoption is at less than 1% of the global world population with some countries and
