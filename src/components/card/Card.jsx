@@ -1,7 +1,8 @@
 const cardData = [
   {
     bgColor: 'bg-green-500',
-    mt:'lg:mt-5 md:mt-5 mt-2',
+    mt:'lg:mt-5 xl:mt-5 mt-2',
+    mt2:'mt-16',
     borderColor: 'border-green-600',
     shadowColor: 'shadow-green-600',
     textColor: 'text-green-600',
@@ -29,7 +30,8 @@ const cardData = [
   },
   {
     bgColor: 'bg-blue-500',
-    mt:'lg:mt-28 md:mt-24 mt-2',
+    mt:'lg:mt-40 xl:mt-40 mt-2',
+    mt2:'mt-5',
     borderColor: 'border-blue-600',
     shadowColor: 'shadow-blue-600',
     textColor: 'text-blue-600',
@@ -60,17 +62,17 @@ const cardData = [
 
 const Card = () => {
   return (
-    <div className='flex flex-col items-center lg:flex-row lg:justify-center lg:space-x-2 '>
+    <div className='flex flex-col gap-3 items-center lg:flex-row lg:justify-center lg:space-x-2 xl:flex-row xl:justify-center xl:space-x-2 '>
       {cardData.map((card, index) => (
-        <div key={index} className={`bg-slate-900 shadow-md shadow-slate-800 text-white w-full lg:w-[40%] lg:h-[auto] p-9 rounded-md ${card.borderColor} lg:mb-20 mb-2  ${card.mt}`}>
+        <div key={index} className={`bg-slate-900 shadow-md shadow-slate-800 text-white w-full lg:w-[40%]  lg:h-[auto] xl:w-[40%] xl:h-[auto]  p-9 rounded-xl ${card.borderColor} lg:mb-20 xl:mb-20 mb-2  ${card.mt}`}>
           <div className={`h-16 w-16 rounded-full ${card.bgColor} justify-center items-center flex shadow-md ${card.shadowColor}`}>
             {card.icon}
           </div>
           <p className='text-3xl text-white mt-3'>For <span className={`border-b-2 ${card.borderColor} ${card.textColor} font-semibold`}>{card.title}</span></p>
           <div className='h-auto'>
             <p className='text-sm text-slate-400 mt-3'>{card.subTitle}</p>
-          </div>
-          <button className={`mt-4 border-b-2 text-md ${card.borderColor} ${card.textColor} flex text-center gap-1 items-center justify-center`}>Learn more
+          </div >
+          <button className={` border-b-2 text-md ${card.borderColor} ${card.textColor} flex text-center gap-1 items-center justify-center ${card.mt2}`}>Learn more
             {card.arrowicon}
           </button>
         </div>

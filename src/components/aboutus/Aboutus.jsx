@@ -12,7 +12,7 @@ const Aboutus = () => {
 
     return (
         <div className='mt-5'>
-             <div className='lg:flex ' >
+             <div className='lg:flex xl:flex ' >
           <img src={logo} alt="logo" />
           <p className='text-3xl font-semibold text-white '>Tokner is coming</p>
         </div>
@@ -28,7 +28,7 @@ const Aboutus = () => {
                 can explain it in simple words to their followers and have them download an app, buy into the social
                 currency of their favourite person and watch their
                 investment as is with other crypto currency project. </p>
-              <div className='hidden lg:block'>
+              <div className='hidden lg:block xl:block'>
                 <p className='font-light ' >
                   We are trying to do to this space what investment apps did for the "nonexistent retail investors".
                   We are gamefying digital currency, bringing in popular faces instead of hard to understand projects

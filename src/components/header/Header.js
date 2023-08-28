@@ -6,7 +6,7 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div  className='absolute top-0 w-full ' >     
+    <div  className='absolute top-0 w-full lg:px-[2rem] px-4' >     
       <nav className="flex items-center justify-between flex-wrap p-4">
       <div className='flex items-center justify-center lg:pr-16 p-1' >
           <img src={logo} alt="logo" className='h-5 w-auto' />
