@@ -7,30 +7,30 @@ const Footer = () => {
     <div className='absolute bottom-0 w-full ' >
 
 
-      <div className='lg:flex xl:flex hidden flex-row justify-center items-center w-full gap-8'>
-        <div className='flex gap-8'>
-          <p className='font-semibold underline uppercase text-md cursor-pointer'>Our team</p>
-          <p className='text-slate-600'>/</p>
+      <div className='xl:flex lg:flex 2xl:flex hidden flex-row justify-center items-center w-full gap-8 text-white'>
+        <div className='flex lg:gap-8 xl:gap-14 2xl:gap-28'>
+          <p className='font-semibold underline uppercase text-xl cursor-pointer'>Our team</p>
+          <p className='opacity-50 text-2xl'>/</p>
         </div>
-        <div className='flex gap-8'>
-          <p className='font-semibold underline uppercase text-md cursor-pointer'>Tokens</p>
-          <p className='text-slate-600'>/</p>
+        <div className='flex lg:gap-8 xl:gap-14 2xl:gap-28'>
+          <p className='font-semibold underline uppercase text-xl cursor-pointer'>Tokens</p>
+          <p className='opacity-50 text-2xl'>/</p>
         </div>
-        <div className='flex gap-8'>
-          <p className='font-semibold underline uppercase text-md cursor-pointer'>Connect wallet</p>
-          <p className='text-slate-600'>/</p>
+        <div className='flex lg:gap-8 xl:gap-14 2xl:gap-28'>
+          <p className='font-semibold underline uppercase text-xl cursor-pointer'>Connect wallet</p>
+          <p className='opacity-50 text-2xl'>/</p>
         </div>
-        <div className='flex gap-8'>
-          <p className='font-semibold underline uppercase text-md cursor-pointer'>Lightpaper</p>
-          <p className='text-slate-600'>/</p>
+        <div className='flex lg:gap-8 xl:gap-14 2xl:gap-28'>
+          <p className='font-semibold underline uppercase text-xl cursor-pointer'>Lightpaper</p>
+          <p className='opacity-50 text-2xl'>/</p>
         </div>
       </div>
 
       <div className='w-full lg:justify-between xl:justify-between flex lg:flex-row xl:flex-row flex-col text-4xl lg:p-16 xl:p-16 p-4 justify-center  items-center space-y-8 '>
 
         <div className='flex items-center justify-center' >
-          <img src={logo} alt="logo" />
-          <p className='text-3xl font-semibold text-white '>Tokners</p>
+          <img src={logo} alt="logo" className='w-auto h-auto' />
+          <p className='xl:text-4xl lg:text-3xl text-3xl 2xl:text-5xl font-semibold text-white '>Tokners</p>
         </div>
 
 

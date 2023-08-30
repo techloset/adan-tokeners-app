@@ -4,7 +4,7 @@ const cardData = [
     mt:'lg:mt-5 xl:mt-5 mt-2',
     mt2:'mt-16',
     borderColor: 'border-green-600',
-    shadowColor: 'shadow-green-600',
+    shadowColor: 'shadow-green-600/50',
     textColor: 'text-green-600',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -33,7 +33,7 @@ const cardData = [
     mt:'lg:mt-40 xl:mt-40 mt-2',
     mt2:'mt-5',
     borderColor: 'border-blue-600',
-    shadowColor: 'shadow-blue-600',
+    shadowColor: 'shadow-blue-600/50',
     textColor: 'text-blue-600',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -62,17 +62,17 @@ const cardData = [
 
 const Card = () => {
   return (
-    <div className='flex flex-col gap-3 items-center lg:flex-row lg:justify-center lg:space-x-2 xl:flex-row xl:justify-center xl:space-x-2 '>
+    <div className='flex flex-col gap-3 lg:mx-18 xl:mx-24 2xl:mx-28 sm:mx-4 md:mx-4 xs:mx-4 items-center lg:flex-row lg:justify-center lg:space-x-2 xl:flex-row xl:justify-center xl:space-x-2 '>
       {cardData.map((card, index) => (
-        <div key={index} className={`bg-slate-900 shadow-md shadow-slate-800 text-white w-full lg:w-[40%]  lg:h-[auto] xl:w-[40%] xl:h-[auto]  p-9 rounded-xl ${card.borderColor} lg:mb-20 xl:mb-20 mb-2  ${card.mt}`}>
-          <div className={`h-16 w-16 rounded-full ${card.bgColor} justify-center items-center flex shadow-md ${card.shadowColor}`}>
+        <div key={index} className={` bg-slate-900 shadow-md shadow-slate-800 text-white  mx-4 lg:w-[40%]  2xl:w-[777px] xl:w-[45%] 2xl:h-[436px] xl:h-[450px]   sm:w-[80%] p-9 rounded-[1.50rem] ${card.borderColor} lg:mb-20 xl:mb-20 mb-2  ${card.mt}`}>
+          <div className={`h-16 w-16 rounded-full ${card.bgColor} justify-center items-center flex shadow-xl ${card.shadowColor}`}>
             {card.icon}
           </div>
-          <p className='text-3xl text-white mt-3'>For <span className={`border-b-2 ${card.borderColor} ${card.textColor} font-semibold`}>{card.title}</span></p>
-          <div className='h-auto'>
-            <p className='text-sm text-slate-400 mt-3'>{card.subTitle}</p>
+          <p className='xl:text-4xl lg:text-3xl sm:text-3xl 2xl:text-5xl xs:text-2xl text-white mt-3'>For <span className={`border-b-2 ${card.borderColor} ${card.textColor} font-semibold`}>{card.title}</span></p>
+          <div className='h-auto overflow-y-hidden'>
+            <p className='sm:text-sm xs:text-sm xl:text-[1rem] lg:text-md 2xl:text-[1.2rem] leading-[3rem] opacity-50 font-light text-slate-400 mt-3 '>{card.subTitle}</p>
           </div >
-          <button className={` border-b-2 text-md ${card.borderColor} ${card.textColor} flex text-center gap-1 items-center justify-center ${card.mt2}`}>Learn more
+          <button className={`border-b-2 text-md ${card.borderColor} ${card.textColor} flex text-center gap-1 items-center justify-center ${card.mt2} xs:pb-[41px]`}>Learn more
             {card.arrowicon}
           </button>
         </div>

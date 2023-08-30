@@ -1,6 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-html{
-background-color: #020617;
+
+body{
+    overflow-x: hidden;
+}
+
+#root{
+    font-family: 'CenturyGothic',;
+  }
+
+@layer components {
+    .bgBlur {
+        transform: rotate(10deg);
+        z-index: -10;
+        top: -50px;
+        left: 200px;
+        filter: blur(100px);
+        position: absolute;
+    } 
+    .bgpresaleiphone{
+        background-image: url("./images/style/mobilebg.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .bgpresale{
+        background-image: url("./images/style/desktopbg.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .colorfull{
+        background-image: url("/src/images/Colors/DesktopStyle.svg");
+        background-size: cover;
+        overflow: hidden;
+        background-repeat: no-repeat;
+    }
 }

@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <div className='font-Gothic'>
+    <div className={"font-['Century_Gothic']"}>
     <App  />
     </div>
   </React.StrictMode>
