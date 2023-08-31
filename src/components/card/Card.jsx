@@ -1,11 +1,11 @@
 const cardData = [
   {
-    bgColor: 'bg-green-500',
-    mt:'lg:mt-5 xl:mt-5 mt-2',
-    mt2:'mt-16',
-    borderColor: 'border-green-600',
-    shadowColor: 'shadow-green-600/50',
-    textColor: 'text-green-600',
+    bgColor: 'bg-[#22A75D]',
+    mt: 'lg:mt-5 xl:mt-5 mt-2',
+    mt2: 'mt-16',
+    borderColor: 'border-[#22A75D]',
+    shadowColor: 'DropshadowGreen',
+    textColor: 'text-[#22A75D]',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
         <g clip-path="url(#clip0_7_323)">
@@ -29,14 +29,14 @@ const cardData = [
     tokens minted.`,
   },
   {
-    bgColor: 'bg-blue-500',
-    mt:'lg:mt-40 xl:mt-40 mt-2',
-    mt2:'mt-5',
-    borderColor: 'border-blue-600',
-    shadowColor: 'shadow-blue-600/50',
-    textColor: 'text-blue-600',
+    bgColor: 'bg-[#2278D4]',
+    mt: 'lg:mt-40 xl:mt-40 mt-2',
+    mt2: 'mt-5',
+    borderColor: 'border-[#2278D4]',
+    shadowColor: 'DropshadowBlue',
+    textColor: 'text-[#2278D4]',
     icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <svg  className="w-[24px] h-[24px]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
         <g clip-path="url(#clip0_7_332)">
           <path d="M1.3267 12.4L4.8867 15L3.53471 19.187C3.31622 19.8363 3.31345 20.539 3.52681 21.19C3.74018 21.8411 4.15825 22.4058 4.7187 22.8C5.26956 23.2067 5.9371 23.4247 6.62186 23.4212C7.30662 23.4178 7.97195 23.1932 8.51871 22.781L11.9997 20.219L15.4817 22.778C16.0316 23.1824 16.6955 23.4021 17.3781 23.4054C18.0607 23.4087 18.7267 23.1955 19.2805 22.7965C19.8342 22.3974 20.2472 21.833 20.46 21.1844C20.6728 20.5359 20.6744 19.8365 20.4647 19.187L19.1127 15L22.6727 12.4C23.2218 11.9985 23.6301 11.4337 23.8391 10.7863C24.048 10.139 24.0471 9.44214 23.8364 8.79534C23.6257 8.14854 23.2159 7.58488 22.6657 7.18486C22.1155 6.78484 21.453 6.56892 20.7727 6.56796H16.3997L15.0727 2.43195C14.864 1.78091 14.454 1.21297 13.9017 0.81002C13.3494 0.407071 12.6834 0.189941 11.9997 0.189941C11.316 0.189941 10.65 0.407071 10.0977 0.81002C9.54544 1.21297 9.13538 1.78091 8.92671 2.43195L7.59971 6.56796H3.23071C2.55045 6.56892 1.8879 6.78484 1.33768 7.18486C0.787473 7.58488 0.377745 8.14854 0.167026 8.79534C-0.0436933 9.44214 -0.044626 10.139 0.164361 10.7863C0.373348 11.4337 0.781566 11.9985 1.3307 12.4H1.3267Z" fill="#191F30" />
         </g>
@@ -48,7 +48,7 @@ const cardData = [
       </svg>
     ),
     arrowicon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <svg className="w-[24px] h-[24px]" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.70727 2.62615C8.31675 2.23562 7.68358 2.23562 7.29306 2.62615C6.90253 3.01667 6.90253 3.64983 7.29306 4.04036L10.2526 6.99992H3.3335C2.78121 6.99992 2.3335 7.44763 2.3335 7.99992C2.3335 8.5522 2.78121 8.99992 3.3335 8.99992H10.2526L7.29306 11.9595C6.90253 12.35 6.90253 12.9832 7.29306 13.3737C7.68358 13.7642 8.31675 13.7642 8.70727 13.3737L13.3739 8.70703C13.4698 8.61115 13.5422 8.50065 13.591 8.3827C13.6398 8.2648 13.6668 8.13551 13.6668 7.99992C13.6668 7.86433 13.6398 7.73504 13.591 7.61714C13.5422 7.49919 13.4698 7.38869 13.3739 7.29281L8.70727 2.62615Z" fill="#2278D4" />
       </svg>
     ),
@@ -62,21 +62,29 @@ const cardData = [
 
 const Card = () => {
   return (
-    <div className='flex flex-col gap-3 lg:mx-18 xl:mx-24 2xl:mx-28 sm:mx-4 md:mx-4 xs:mx-4 items-center lg:flex-row lg:justify-center lg:space-x-2 xl:flex-row xl:justify-center xl:space-x-2 '>
+    <div className='flex flex-col gap-3 xl:mx-8 2xl:mx-10  lg:mx-1 sm:mx-1 md:mx-1 xs:mx-1   items-center lg:flex-row lg:justify-center lg:space-x-2 xl:flex-row xl:justify-center xl:space-x-1 '>
       {cardData.map((card, index) => (
-        <div key={index} className={` bg-slate-900 shadow-md shadow-slate-800 text-white  mx-4 lg:w-[40%]  2xl:w-[777px] xl:w-[45%] 2xl:h-[436px] xl:h-[450px]   sm:w-[80%] p-9 rounded-[1.50rem] ${card.borderColor} lg:mb-20 xl:mb-20 mb-2  ${card.mt}`}>
-          <div className={`h-16 w-16 rounded-full ${card.bgColor} justify-center items-center flex shadow-xl ${card.shadowColor}`}>
-            {card.icon}
+        <div key={index} className={`bg-[#171B29]  text-white mx-4 lg:w-[40%] 2xl:w-[777px] xl:w-[45%] 2xl:h-[436px] xl:h-[450px] sm:w-[95%] p-9 rounded-[1.50rem] ${card.borderColor} lg:mb-20 xl:mb-20 mb-2 ${card.mt} flex flex-col justify-between`} >
+          <div>
+            <div className={`h-[70px] w-[70px] rounded-full ${card.bgColor} justify-center items-center flex shadow-xl ${card.shadowColor}`}>
+              {card.icon}
+            </div>
+            <p className='xl:text-[36px] lg:text-[30px] sm:text-[28px] 2xl:text-[36px] xs:text-[28px] text-white my-6 font-[700] leading-[54px]'>
+              For <span className={`border-b-2 ${card.borderColor} ${card.textColor}`}>{card.title}</span>
+            </p>
+            <div className='h-auto overflow-y-hidden'>
+              <p className='lg:text-md leading-[24px] font-[400] xl:text-[16px] 2xl:text-[16px] sm:opacity-50 text-slate-400 mt-3 '>
+                {card.subTitle}
+              </p>
+            </div>
           </div>
-          <p className='xl:text-4xl lg:text-3xl sm:text-3xl 2xl:text-5xl xs:text-2xl text-white mt-3'>For <span className={`border-b-2 ${card.borderColor} ${card.textColor} font-semibold`}>{card.title}</span></p>
-          <div className='h-auto overflow-y-hidden'>
-            <p className='sm:text-sm xs:text-sm xl:text-[1rem] lg:text-md 2xl:text-[1.2rem] leading-[3rem] opacity-50 font-light text-slate-400 mt-3 '>{card.subTitle}</p>
-          </div >
-          <button className={`border-b-2 text-md ${card.borderColor} ${card.textColor} flex text-center gap-1 items-center justify-center ${card.mt2} xs:pb-[41px]`}>Learn more
+          <button className={`flex gap-1`}>
+            <p className={`underline underline-offset-4 text-[14px] font-[700] ${card.borderColor} ${card.textColor}`}>Learn more</p>
             {card.arrowicon}
           </button>
         </div>
       ))}
+
     </div>
   );
 }

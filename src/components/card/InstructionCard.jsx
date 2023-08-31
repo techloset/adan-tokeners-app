@@ -1,8 +1,8 @@
 const cardsData = [
     {
-        bgColor: 'bg-green-500',
-        textColor: 'text-green-500',
-        shadowColor: 'shadow-green-500',
+        bgColor: 'bg-[#22A75D]',
+        textColor: 'text-[#22A75D]',
+        shadowColor: 'DropshadowGreen',
         quarter: 'Q1',
         year: '2021',
         milestones: [
@@ -11,9 +11,9 @@ const cardsData = [
         ]
     },
     {
-        bgColor: 'bg-blue-500',
-        textColor: 'text-blue-500',
-        shadowColor: 'shadow-blue-500',
+        bgColor: 'bg-[#2278D4]',
+        textColor: 'text-[#2278D4]',
+        shadowColor: 'DropshadowBlue',
         quarter: 'Q2',
         year: '2021',
         milestones: [
@@ -24,9 +24,9 @@ const cardsData = [
             "Marketing and promotion",
         ]
     }, {
-        bgColor: 'bg-yellow-500',
-        textColor: 'text-yellow-500',
-        shadowColor: 'shadow-yellow-500',
+        bgColor: 'bg-[#FFD100]',
+        textColor: 'text-[#FFD100]',
+        shadowColor: 'DropshadowYellow',
         quarter: 'Q3',
         year: '2021',
         milestones: [
@@ -36,9 +36,9 @@ const cardsData = [
         ]
     },
     {
-        bgColor: 'bg-red-600',
-        textColor: 'text-red-600',
-        shadowColor: 'shadow-red-600',
+        bgColor: 'bg-[#E20613]',
+        textColor: 'text-[#E20613]',
+        shadowColor: 'DropshadowRed',
         quarter: 'Q4',
         year: '2021',
         milestones: [
@@ -53,24 +53,23 @@ const cardsData = [
 
 const InstructionCard = () => {
     return (
-        <div className='x grid lg:grid-cols-4 xl:grid-cols-4 
-        md:grid-cols-2 grid-cols-1 space-y-2'>
+        <div className='x grid lg:grid-cols-4 xl:grid-cols-4   md:grid-cols-2 grid-cols-1 space-y-2 gap-1'>
             {cardsData.map((card, index) => (
                 <div key={index} className="w-[100%] h-auto">
                     <div className="flex gap-2">
-                        <div className={`${card.bgColor} ${card.shadowColor} shadow-md rounded-r-full rounded-tl-full w-16 h-16 justify-center items-center flex rounded-bl-3xl`}>
-                            <p className="text-slate-950 font-semibold text-2xl">{card.quarter}</p>
+                        <div className={`${card.bgColor} ${card.shadowColor} shadow-md rounded-r-full rounded-tl-full w-[82px] h-[82px] justify-center items-center flex rounded-bl-3xl`}>
+                            <p className="text-slate-950 font-bold text-[26px] leading-[36px]">{card.quarter}</p>
                         </div>
                         <div className="flex flex-col">
-                            <div className={`${card.bgColor} rounded-full h-4 w-4 mt-auto`}></div>
-                            <p className="font-semibold text-sm text-white">{card.year}</p>
+                            <div className={`${card.bgColor} rounded-full h-[12px] w-[12px] mt-auto`}></div>
+                            <p className=" font-bold leading-[36px] text-[18px] text-white">{card.year}</p>
                         </div>
                     </div>
                     <div className="space-y-2 mt-12">
                         {card.milestones.map((milestone, index) => (
                             <div key={index} className="flex">
-                                <p className={`${card.textColor} font-bold mr-3`}>0{index + 1}</p>
-                                <p className="text-md text-slate-300 font-light">{milestone}</p>
+                                <p className={`${card.textColor} font-bold text-[12px] leading-[34px] mr-3`}>0{index + 1}</p>
+                                <p className="text-[18px] leading-[34px] text-white font-[400] opacity-[0.7]">{milestone}</p>
                             </div>
                         ))}
                     </div>

@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
         <div className='flex lg:gap-8 xl:gap-14 2xl:gap-28'>
           <p className='font-semibold underline uppercase text-xl cursor-pointer'>Lightpaper</p>
-          <p className='opacity-50 text-2xl'>/</p>
+       
         </div>
       </div>
 

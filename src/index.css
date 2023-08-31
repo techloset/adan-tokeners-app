@@ -29,7 +29,19 @@ body{
         background-repeat: no-repeat;
         background-size: cover;
     }
-    
+    .DropshadowBlue {
+        filter: drop-shadow(0px 15px 25px rgba(34, 120, 212, 0.25));
+      }
+      .DropshadowGreen {
+        filter: drop-shadow(0px 15px 25px rgba(34, 167, 93, 0.25));
+      }
+      .DropshadowYellow {
+        filter: drop-shadow(0px 15px 25px rgba(255, 209, 0, 0.25));
+      }
+      .DropshadowRed {
+        filter: drop-shadow(0px 15px 25px rgba(226, 6, 19, 0.25));
+      }
+      
     .colorfull{
         background-image: url("/src/images/Colors/DesktopStyle.svg");
         background-size: cover;

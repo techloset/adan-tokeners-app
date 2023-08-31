@@ -91,7 +91,7 @@ const Links = () => {
     <div className='flex flex-row gap-3 items-center justify-center'>
       {iconData.map((icon, index) => (
         <a key={index} href={icon.link} target="_blank" rel="noopener noreferrer">
-          <div className='flex items-center justify-center h-14 w-14 rounded-full border-2 border-slate-700 cursor-pointer'>
+          <div className='flex items-center justify-center xl:h-[50px] xl:w-[50px] 2xl:h-[50px] 2xl:w-[50px] lg:h-[50px] lg:w-[50px] md:h-[48px] md:w-[48px] sm:h-[48px] sm:w-[48px] xs:h-[45px] xs:w-[45px] rounded-full border-2 border-slate-700 cursor-pointer'>
             {icon.svgPath}
           </div>
         </a>
