@@ -73,7 +73,7 @@ const Card = () => {
               For <span className={`border-b-2 ${card.borderColor} ${card.textColor}`}>{card.title}</span>
             </p>
             <div className='h-auto overflow-y-hidden'>
-              <p className='lg:text-md leading-[24px] font-[400] xl:text-[16px] 2xl:text-[16px] sm:opacity-50 text-slate-400 mt-3 '>
+              <p className='lg:text-md leading-[24px] font-[400] xl:text-[16px] 2xl:text-[16px] sm:opacity-50 text-slate-400 mt-3 max-w-[637px] '>
                 {card.subTitle}
               </p>
             </div>
