@@ -25,7 +25,7 @@ const cardData = [
     shadowColor: 'DropshadowBlue',
     quarter: `${Number2}`,
     phase: 'Phase Two',
-    mt: 'mt-[10%]',
+    mt: 'mt-[5%]',
     date: '0/04/2021 - 16/04/2021',
     bnbToWntr: '100000 WNTR',
     softCap: '0 BNB',
@@ -64,7 +64,7 @@ const PresaleCards = () => {
               slidesToScroll={1}
             >
               {cardData.map((card, index) => (
-                <div key={index} className={`w-[335px] h-[465px] bg-white p-8 justify-center items-center text-[#191B21]  text-center rounded-[25px] py-16 relative ${card.shadowColor}`}>
+                <div key={index} className={`w-[335px] h-[465px] flex flex-col bg-white p-8 justify-center items-center text-[#191B21]  text-center rounded-[25px]  relative ${card.shadowColor}`}>
                    <div className='absolute bg-cover justfy-center flex flex-col top-[90px] right-[70px]  w-auto' >
                   <img src={card.quarter} className='w-[180px]' alt='Numbers'/>
                   </div>

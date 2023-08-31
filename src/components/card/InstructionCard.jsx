@@ -53,7 +53,7 @@ const cardsData = [
 
 const InstructionCard = () => {
     return (
-        <div className='x grid lg:grid-cols-4 xl:grid-cols-4   md:grid-cols-2 grid-cols-1 space-y-2 gap-1'>
+        <div className=' 2xl:mt-0 md:mt-6 sm:mt-6 xs:mt-6 grid lg:grid-cols-4 xl:grid-cols-4   md:grid-cols-2 grid-cols-1 space-y-2 gap-1'>
             {cardsData.map((card, index) => (
                 <div key={index} className="w-[100%] h-auto">
                     <div className="flex gap-2">
@@ -65,7 +65,7 @@ const InstructionCard = () => {
                             <p className=" font-bold leading-[36px] text-[18px] text-white">{card.year}</p>
                         </div>
                     </div>
-                    <div className="space-y-2 mt-12">
+                    <div className="space-y-2 2xl:mt-12 md:mt-4 sm:mt-4 xs:mt-4">
                         {card.milestones.map((milestone, index) => (
                             <div key={index} className="flex">
                                 <p className={`${card.textColor} font-bold text-[12px] leading-[34px] mr-3`}>0{index + 1}</p>

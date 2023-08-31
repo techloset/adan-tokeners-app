@@ -62,18 +62,18 @@ const cardData = [
 
 const Card = () => {
   return (
-    <div className='flex flex-col gap-3 xl:mx-8 2xl:mx-10  lg:mx-1 sm:mx-1 md:mx-1 xs:mx-1   items-center lg:flex-row lg:justify-center lg:space-x-2 xl:flex-row xl:justify-center xl:space-x-1 '>
+    <div className='flex flex-col gap-3 xl:mx-8 2xl:mx-10  lg:mx-1 sm:mx-1 md:mx-1 xs:mx-1 space-y-0   items-center lg:flex-row lg:justify-center lg:space-x-2 xl:flex-row xl:justify-center xl:space-x-1 '>
       {cardData.map((card, index) => (
-        <div key={index} className={`bg-[#171B29]  text-white mx-4 lg:w-[40%] 2xl:w-[777px] xl:w-[45%] 2xl:h-[436px] xl:h-[450px] sm:w-[95%] p-9 rounded-[1.50rem] ${card.borderColor} lg:mb-20 md:mb-0 sm:mb-0 xs:mb-0  xl:mb-20 mb-2 ${card.mt} flex flex-col justify-between space-y-4`} >
+        <div key={index} className={`bg-[#171B29]  text-white mx-4 lg:w-[40%] 2xl:w-[777px] xl:w-[45%] 2xl:h-[436px] xl:h-[450px] sm:w-[95%] p-9 rounded-[1.50rem] ${card.borderColor} lg:mb-20 md:mb-0 sm:mb-0 xs:mb-0  xl:mb-20  ${card.mt} flex flex-col justify-between space-y-4`} >
           <div>
             <div className={`h-[70px] w-[70px] rounded-full ${card.bgColor} justify-center items-center flex shadow-xl ${card.shadowColor}`}>
               {card.icon}
             </div>
-            <p className='xl:text-[36px] lg:text-[30px] sm:text-[28px] 2xl:text-[36px] xs:text-[28px] text-white my-6 font-[700] leading-[54px]'>
+            <p className='xl:text-[36px] lg:text-[30px] sm:text-[28px] 2xl:text-[36px] xs:text-[28px] text-white 2xl:my-6 md:my-2 sm:my-2 xs:my-2  font-[700] leading-[54px]'>
               For <span className={`border-b-2 ${card.borderColor} ${card.textColor}`}>{card.title}</span>
             </p>
             <div className='h-auto overflow-y-hidden'>
-              <p className='lg:text-md leading-[24px] font-[400] xl:text-[16px] 2xl:text-[16px] sm:opacity-50 text-slate-400 mt-3 max-w-[637px] '>
+              <p className='lg:text-md leading-[24px] font-[400] xl:text-[16px] 2xl:text-[16px] sm:opacity-50 text-slate-400 mt- max-w-[637px]  min-w-[279px]'>
                 {card.subTitle}
               </p>
             </div>
