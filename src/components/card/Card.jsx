@@ -6,6 +6,7 @@ const cardData = [
     borderColor: 'border-[#22A75D]',
     shadowColor: 'DropshadowGreen',
     textColor: 'text-[#22A75D]',
+    pad:"p-[0.85px]",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
         <g clip-path="url(#clip0_7_323)">
@@ -35,7 +36,7 @@ const cardData = [
     borderColor: 'border-[#2278D4]',
     shadowColor: 'DropshadowBlue',
     textColor: 'text-[#2278D4]',
-    cardpad:"p-[0.06rem]",
+    pad:"p-[0.85px]",
     icon: (
       <svg  className="w-[24px] h-[24px]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
         <g clip-path="url(#clip0_7_332)">
@@ -55,9 +56,7 @@ const cardData = [
     ),
     title: 'Holders',
     subTitle: `Holding social tokens allows the individual to gain access to benefits including unreleased
-    content, private communities, direct access to celebrity, early- access to tickets and more as well as 
-    the ability to trade with other communities in order to gain access to more creator content with early token 
-    buyers being the biggest winners as the value of the token increases with more buyers.`,
+    content, private communities, direct access to celebrity, early- access to tickets and more as well as the ability to trade with other communities in   order to gain access to more creator content with early token buyers being the biggest winners as the value of the token increases with more buyers. .`,
   },
 ];
 
