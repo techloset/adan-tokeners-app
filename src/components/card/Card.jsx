@@ -31,7 +31,7 @@ const cardData = [
   {
     bgColor: 'bg-[#2278D4]',
     mt: 'lg:mt-40 xl:mt-40 mt-2',
-    mt2: 'mt-5',
+    mt2: 'lg:mt-5 xl:mt-5 2xl:mt-5 md:mt-0 sm:mt-0 xs:mt-0',
     borderColor: 'border-[#2278D4]',
     shadowColor: 'DropshadowBlue',
     textColor: 'text-[#2278D4]',
@@ -64,7 +64,7 @@ const Card = () => {
   return (
     <div className='flex flex-col gap-3 xl:mx-8 2xl:mx-10  lg:mx-1 sm:mx-1 md:mx-1 xs:mx-1   items-center lg:flex-row lg:justify-center lg:space-x-2 xl:flex-row xl:justify-center xl:space-x-1 '>
       {cardData.map((card, index) => (
-        <div key={index} className={`bg-[#171B29]  text-white mx-4 lg:w-[40%] 2xl:w-[777px] xl:w-[45%] 2xl:h-[436px] xl:h-[450px] sm:w-[95%] p-9 rounded-[1.50rem] ${card.borderColor} lg:mb-20 xl:mb-20 mb-2 ${card.mt} flex flex-col justify-between`} >
+        <div key={index} className={`bg-[#171B29]  text-white mx-4 lg:w-[40%] 2xl:w-[777px] xl:w-[45%] 2xl:h-[436px] xl:h-[450px] sm:w-[95%] p-9 rounded-[1.50rem] ${card.borderColor} lg:mb-20 md:mb-0 sm:mb-0 xs:mb-0  xl:mb-20 mb-2 ${card.mt} flex flex-col justify-between space-y-4`} >
           <div>
             <div className={`h-[70px] w-[70px] rounded-full ${card.bgColor} justify-center items-center flex shadow-xl ${card.shadowColor}`}>
               {card.icon}

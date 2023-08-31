@@ -64,9 +64,9 @@ const PresaleCards = () => {
               slidesToScroll={1}
             >
               {cardData.map((card, index) => (
-                <div key={index} className={`w-[335px] h-[465px] bg-white p-8 justify-center items-center text-[#191B21]  text-center rounded-xl py-16 relative ${card.shadowColor}`}>
-                   <div className='absolute bg-cover text-center items-center flex flex-col top-[90px]' >
-                  <img src={card.quarter} alt='Numbers'/>
+                <div key={index} className={`w-[335px] h-[465px] bg-white p-8 justify-center items-center text-[#191B21]  text-center rounded-[25px] py-16 relative ${card.shadowColor}`}>
+                   <div className='absolute bg-cover justfy-center flex flex-col top-[90px] right-[70px]  w-auto' >
+                  <img src={card.quarter} className='w-[180px]' alt='Numbers'/>
                   </div>
                   <div className='my-[10%] relative'>
                     <div className='w-full flex justify-center items-center text-center mt-10'>
@@ -77,7 +77,7 @@ const PresaleCards = () => {
                     <h1 className='pt-8 text-[#191B21] text-[32px] leading-[54px] font-bold'>{card.phase}</h1>
                     <p className='text-[#191B21] text-[16px] leading-[20px] font-bold opacity-[0.8]'>{card.date}</p>
                     <p className='text-[#191B21] text-[20px] leading-[20px] font-bold opacity-[0.8] mt-10'>1 BNB = {card.bnbToWntr}</p>
-                    <p className='text-[#191B21] text-[16px] leading-[20px] font-[400] opacity-[0.8] mt-4'>Soft cap: <span className='font-bold'>{card.softCap}</span></p>
+                    <p className='text-[#191B21] text-[16px] leading-[20px] font-[400] opacity-[0.8] mt-4 mb-2'>Soft cap: <span className='font-bold'>{card.softCap}</span></p>
                     <p className='text-[#191B21] text-[16px] leading-[20px] font-[400] opacity-[0.8]'>Hard cap: <span className='font-bold text-md'>{card.hardCap}</span></p>
                   </div>
                 </div>
@@ -96,9 +96,9 @@ const PresaleCards = () => {
           <div className='flex items-center justify-center gap-6' >
             {cardData.map((card, index) => (
               
-                <div key={index} className={`${card.mt} w-[511px] h-[585px]   bg-white p-8  justify-center items-center text-slate-950 text-center space-y-2 rounded-xl py-16 relative `}>
-                  <div className='absolute bg-cover  flex flex-col top-[97px]' >
-                  <img src={card.quarter} alt='Numbers' className='p-10'/>
+                <div key={index} className={`${card.mt} w-[511px] h-[585px]   bg-white p-8  justify-center items-center text-slate-950 text-center space-y-2 rounded-[25px] py-16 relative `}>
+                  <div className='absolute bg-cover  flex flex-col top-[97px] 2xl:right-[120px] xl:right-[100px] lg:right-[70px]' >
+                  <img src={card.quarter} alt='Numbers' className='w-[288px]'/>
                   </div>
                   <div className='my-[10%] flex flex-col justify-center items-center text-center w-full h-full relative'>
                     <div className='w-full flex justify-center items-center text-center '>
