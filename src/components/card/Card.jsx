@@ -35,6 +35,7 @@ const cardData = [
     borderColor: 'border-[#2278D4]',
     shadowColor: 'DropshadowBlue',
     textColor: 'text-[#2278D4]',
+    cardpad:"p-[0.06rem]",
     icon: (
       <svg  className="w-[24px] h-[24px]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
         <g clip-path="url(#clip0_7_332)">
@@ -73,7 +74,8 @@ const Card = () => {
               For <span className={`border-b-2 ${card.borderColor} ${card.textColor}`}>{card.title}</span>
             </p>
             <div className='h-auto overflow-y-hidden'>
-              <p className='lg:text-md leading-[24px] font-[400] xl:text-[16px] 2xl:text-[16px] sm:opacity-50 text-slate-400 mt- max-w-[637px]  min-w-[279px]'>
+              <p className={`lg:text-[16px] ${card.pad} leading-[24px] font-[400] f xl:text-[16px] 2xl:text-[16px] sm:opacity-50 text-slate-400 
+               max-w-[637px]  min-w-[279px]`}>
                 {card.subTitle}
               </p>
             </div>
