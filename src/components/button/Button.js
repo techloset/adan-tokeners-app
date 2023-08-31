@@ -2,13 +2,7 @@ import React from 'react'
 
 const Button = () => {
   return (
-    <div className="flex justify-center items-center  w-[147px] h-[48px] cursor-pointer mt-5">
-      <div className="bg-green-600 rounded-3xl   shadow-xl shadow-green-800/50">
-        <div className="text-white text-center py-2 px-6 text-sm font-bold leading-normal  ">
-          Learn more
-        </div>
-      </div>
-    </div>
+    <button className='text-sm font-bold leading-normal  text-[#fff] text-center bg-[#22A75D] rounded-[52px] w-[147px] h-[48px] mt-10 DropshadowGreen  xs:mt-[30px]'>Learn More</button>
   )
 }
 
