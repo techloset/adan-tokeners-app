@@ -31,12 +31,12 @@ const cardData = [
   },
   {
     bgColor: 'bg-[#2278D4]',
-    mt: 'lg:mt-40 xl:mt-40 mt-2',
+    mt: 'lg:mt-[10rem] xl:mt-[10rem] md:mt-2',
     mt2: 'lg:mt-5 xl:mt-5 2xl:mt-5 md:mt-0 sm:mt-0 xs:mt-0',
     borderColor: 'border-[#2278D4]',
     shadowColor: 'DropshadowBlue',
     textColor: 'text-[#2278D4]',
-    pad:"p-[0.85px]",
+    pad:"2xl:p-[0.85px] xl:p-[0.85px] lg:p-[0.85px]",
     icon: (
       <svg  className="w-[24px] h-[24px]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
         <g clip-path="url(#clip0_7_332)">
@@ -56,15 +56,15 @@ const cardData = [
     ),
     title: 'Holders',
     subTitle: `Holding social tokens allows the individual to gain access to benefits including unreleased
-    content, private communities, direct access to celebrity, early- access to tickets and more as well as the ability to trade with other communities in   order to gain access to more creator content with early token buyers being the biggest winners as the value of the token increases with more buyers. .`,
+    content, private communities, direct access to celebrity, early- access to tickets and more as well as the ability to trade with other communities in  order to gain access to more creator content with early token buyers being the biggest winners as the value of the token increases with more buyers. .`,
   },
 ];
 
 const Card = () => {
   return (
-    <div className='flex flex-col gap-3 xl:mx-8 2xl:mx-10  lg:mx-1 sm:mx-1 md:mx-1 xs:mx-1 space-y-0   items-center lg:flex-row lg:justify-center lg:space-x-2 xl:flex-row xl:justify-center xl:space-x-1 '>
+    <div className='flex flex-col xl:mx-8 2xl:mx-10  lg:mx-1 sm:mx-1 md:mx-1 xs:mx-1 space-y-2   items-center lg:flex-row lg:justify-center lg:space-x-0 xl:flex-row xl:justify-center xl:space-x-0 '>
       {cardData.map((card, index) => (
-        <div key={index} className={`bg-[#171B29]  text-white mx-4 lg:w-[40%] 2xl:w-[777px] xl:w-[45%] 2xl:h-[436px] xl:h-[450px] sm:w-[95%] p-9 rounded-[1.50rem] ${card.borderColor} lg:mb-20 md:mb-0 sm:mb-0 xs:mb-0  xl:mb-20  ${card.mt} flex flex-col justify-between space-y-4`} >
+        <div key={index} className={`bg-[#171B29]  text-white mx-4 lg:w-[40%] 2xl:w-[777px] xl:w-[45%] 2xl:h-[436px] xl:h-[450px] sm:w-[95%] p-9 rounded-[1.50rem] ${card.borderColor} lg:mb-20 md:mb-0 sm:mb-0 xs:mb-0  xl:mb-[10rem]  ${card.mt} flex flex-col justify-between space-y-4`} >
           <div>
             <div className={`h-[70px] w-[70px] rounded-full ${card.bgColor} justify-center items-center flex shadow-xl ${card.shadowColor}`}>
               {card.icon}
@@ -73,8 +73,8 @@ const Card = () => {
               For <span className={`border-b-2 ${card.borderColor} ${card.textColor}`}>{card.title}</span>
             </p>
             <div className='h-auto overflow-y-hidden'>
-              <p className={`lg:text-[16px] ${card.pad} leading-[24px] font-[400] f xl:text-[16px] 2xl:text-[16px] sm:opacity-50 text-slate-400 
-               max-w-[637px]  min-w-[279px]`}>
+              <p className={`${card.pad} md:p-0 leading-[24px] font-[400] text-[16px]  sm:opacity-50 text-slate-400 
+               max-w-[637px]  min-w-[279px] `}>
                 {card.subTitle}
               </p>
             </div>
