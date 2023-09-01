@@ -90,7 +90,7 @@ const PresaleCards = () => {
 
 
       {/* Desktop Card */}
-      <div className='bgpresale pb-[160px] pt-0 mt-0 lg:block sm:hidden xs:hidden'>
+      <div className='bgpresale pb-[160px] pt-0 mt-0 lg:block sm:hidden xs:hidden ' >
         <div className='2xl:mx-[173px] sm:mx-10 pt-[450px]'>
           <h2 className='text-center text-[#fff] text-5xl font-bold leading-[54px]'>Presale Details</h2>
           <div className='flex items-center justify-center gap-6' >
