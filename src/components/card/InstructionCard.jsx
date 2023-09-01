@@ -53,7 +53,7 @@ const cardsData = [
 
 const InstructionCard = () => {
     return (
-        <div className=' 2xl:mt-0 md:mt-6 sm:mt-6 xs:mt-6 grid lg:grid-cols-4 xl:grid-cols-4   md:grid-cols-2 grid-cols-1 space-y-2 gap-1'>
+        <div className=' 2xl:mt-0 md:mt-6 sm:mt-6 xs:mt-6 grid lg:grid-cols-4 xl:grid-cols-4 md:grid-cols-2 grid-cols-1 space-y-2 gap-1'>
             {cardsData.map((card, index) => (
                 <div key={index} className="w-[100%] h-auto">
                     <div className="flex gap-2">

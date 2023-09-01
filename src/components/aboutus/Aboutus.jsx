@@ -15,7 +15,7 @@ function ToknerComing() {
   return (
     <>
     
-    <div className='2xl:mx-[173px] xl:mx-10 lg:mx-12 mt-[189px] xs:mt-[72px] mb-0 pb-0'>
+    <div className='2xl:mx-[140px] xl:mx-10 lg:mx-12 mt-[50px] xs:mt-[72px] mb-0 pb-0'>
         <div className='flex xl:flex-nowrap sm:flex-wrap xs:flex-wrap 2xl:justify-normal sm:justify-center '>
           <div className='2xl:w-[644px] xl:w-[45%] sm:order-2 xs:order-2 xl:order-1 xs:mt-[70px]'>
             <div className='flex flex-nowrap xs:flex-wrap xl:justify-normal sm:justify-center xs:ml-5'>

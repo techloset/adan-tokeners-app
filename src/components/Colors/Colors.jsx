@@ -5,11 +5,12 @@ import Mobile from "../../images/Colors/MobileStyle.svg"
 const Colors = () => {
     return (
         <>
-            <div className='mt-[120px] grid lg:grid-cols-2 sm:grid-cols-1'>
+            <div className='mt-[20px] grid lg:grid-cols-2 sm:grid-cols-1 mb-0 pb-0'>
                 <div className=' lg:inline sm:hidden lg:colorfull sm:rounded-tr-[10rem] lg:rounded-tr-[50%]'>
                     <img src={Desktop} alt="Desktop-Colorfull-Style" className='w-full xs:hidden sm:hidden 2xl:h-full' /> 
                 <img src={Mobile} alt="Desktop-Colorfull-Style" className='hidden  xs:block min-w-full ' /></div>
-                <div className='bg-white lg:rounded-tl-[50%] sm:rounded-tr-[50%] xs:rounded-tr-[10rem] lg:rounded-tr-none 2xl:pb-[130px] lg:pb-11 sm:pb-16'>
+                <div className='bg-white lg:rounded-tl-[50%] sm:rounded-tr-[50%] xs:rounded-tr-[10rem]
+                 lg:rounded-tr-none 2xl:pb-[130px] lg:pb-11 sm:pb-16 mb-0'>
                     <div className='ml-[143px] xs:ml-5 mt-[296px] xs:mt-[70px]'>
                         <h2 className='text-[48px] font-bold leading-[54px]
                          text-[#0F1320] xs:text-4xl xs;leading-[40px] xs:w-[70%] '>What makes us different?</h2>

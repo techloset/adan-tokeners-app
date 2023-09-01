@@ -7,21 +7,21 @@ const Footer = () => {
     <div className='absolute bottom-0 w-full ' >
 
 
-      <div className='xl:flex lg:flex 2xl:flex hidden flex-row justify-center items-center w-full gap-8 text-white'>
-        <div className='flex lg:gap-8 xl:gap-14 2xl:gap-28'>
-          <p className='font-semibold underline uppercase text-xl cursor-pointer'>Our team</p>
-          <p className='opacity-50 text-2xl'>/</p>
+      <div className='xl:flex lg:flex 2xl:flex hidden flex-row justify-center items-center w-full  lg:gap-8 xl:gap-14 2xl:gap-14 text-white'>
+        <div className='flex lg:gap-8 xl:gap-14 2xl:gap-14'>
+          <p className='font-bold underline uppercase text-[16px] tracking-[-0.32px] leading-[normal] cursor-pointer'>Our team</p>
+          <p className=' opacity-[0.16] font-bold underline uppercase text-[16px] tracking-[-0.32px] leading-[normal] cursor-pointer'>/</p>
         </div>
-        <div className='flex lg:gap-8 xl:gap-14 2xl:gap-28'>
-          <p className='font-semibold underline uppercase text-xl cursor-pointer'>Tokens</p>
-          <p className='opacity-50 text-2xl'>/</p>
+        <div className='flex lg:gap-8 xl:gap-14 2xl:gap-14'>
+          <p className='font-bold underline uppercase text-[16px] tracking-[-0.32px] leading-[normal] cursor-pointer'>Tokens</p>
+          <p className=' opacity-[0.16] font-bold underline uppercase text-[16px] tracking-[-0.32px] leading-[normal] cursor-pointer'>/</p>
         </div>
-        <div className='flex lg:gap-8 xl:gap-14 2xl:gap-28'>
-          <p className='font-semibold underline uppercase text-xl cursor-pointer'>Connect wallet</p>
-          <p className='opacity-50 text-2xl'>/</p>
+        <div className='flex lg:gap-8 xl:gap-14 2xl:gap-14'>
+          <p className='font-bold underline uppercase text-[16px] tracking-[-0.32px] leading-[normal] cursor-pointer'>Connect wallet</p>
+          <p className=' opacity-[0.16] font-bold underline uppercase text-[16px] tracking-[-0.32px] leading-[normal] cursor-pointer'>/</p>
         </div>
-        <div className='flex lg:gap-8 xl:gap-14 2xl:gap-28'>
-          <p className='font-semibold underline uppercase text-xl cursor-pointer'>Lightpaper</p>
+        <div className='flex lg:gap-8 xl:gap-14 2xl:gap-14'>
+          <p className='font-bold underline uppercase text-[16px] tracking-[-0.32px] leading-[normal] cursor-pointer'>Lightpaper</p>
        
         </div>
       </div>
